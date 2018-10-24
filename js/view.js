@@ -153,7 +153,7 @@ View.prototype.mainTeachers = function (visor) {
           "</div>" +
       "<div  id='visorSecundario' class='row'>" +
       "<div class='col-sm-12'>" + "<center><span class='titulos-textos'>Aliados de nuestro éxito</span></center>"+
-          "<span class='textos-varios'>Reconocemos que ningún logro pudo ser posible sin la complicidad y esfuerzo de cada profesor. Cada uno de ellos puso a nuestra disposición su carisma, su conocimiento, su método y su cariño, para que lográramos comprender y adquirir las habilidades necesarias para culminar exitosamente el cole."+"<br><br>¡Muchas gracias queridos profes!"+"<br><br></span>"+
+          "<p class='textos-varios'>Reconocemos que ningún logro pudo ser posible sin la complicidad y esfuerzo de cada profesor. Cada uno de ellos puso a nuestra disposición su carisma, su conocimiento, su método y su cariño, para que lográramos comprender y adquirir las habilidades necesarias para culminar exitosamente el cole."+"<br><br>¡Muchas gracias queridos profes!</p>"+"<br>"+
     "<span class='textos-varios'>De Clic al nombre de cada profe para que conozca lo que cada uno nos ha querido compartir...</span>" + "</div>" +
   "</div>" +
   "</div>");

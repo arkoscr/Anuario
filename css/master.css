@@ -12,7 +12,7 @@ body {
 }
 
 .items-menu, .textos-varios{
-  font-size: 2.5vh;
+  font-size: 12px;
 }
 
 .lista-estudiantes{
@@ -84,8 +84,8 @@ font-size: 6vh;
 }
 
 #visorSecundario {
-    padding: 2em;
-    min-height: 20em;
+  padding-top: 1em;
+  min-height: 0em;
 
 }
 
@@ -186,6 +186,8 @@ listaProfe
 }
 #mainVisor{
   height: 225px;
+  height: 13em;
+  overflow-y: scroll;
 }
 
 .botones-imgenes{
@@ -198,7 +200,7 @@ listaProfe
 
 .col-menu-photos {
 height: 14em;
-padding-top: 5em;
+padding-top: 2em;
 }
 
 .menu-opt-camera {
