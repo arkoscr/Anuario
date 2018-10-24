@@ -64,9 +64,9 @@ View.prototype.mainStudents = function (visor) {
             "</div>" +
         "<div class='row'>" +
             "<div class='col-sm-12' id='divBtnSecundaria'>" +
-                    "<button type='button' id='btnIam' class='btn btn-outline-success btn-lg btn-menu-secundario'>Así soy</button>" +
-                    "<button type='button' id='btnPictures' class='btn btn-outline-danger btn-lg btn-menu-secundario'>Fotos</button>" +
-                    "<button type='button' id='btnTestament' class='btn btn-outline-warning btn-lg btn-menu-secundario'>Legado</button>" +
+                    "<button type='button' id='btnIam' class='btn btn-outline-success btn-lg btn-menu-secundario botonesEstudiantes'>Así soy</button>" +
+                    "<button type='button' id='btnPictures' class='btn btn-outline-danger btn-lg btn-menu-secundario botonesEstudiantes'>Fotos</button>" +
+                    "<button type='button' id='btnTestament' class='btn btn-outline-warning btn-lg btn-menu-secundario botonesEstudiantes'>Legado</button>" +
             "</div>" +
         "</div>" +
         "<div  id='visorSecundario' class='row'>" +
@@ -97,7 +97,7 @@ View.prototype.infoStudent = function (student) {
     $("#visorSecundario").empty();
     $("#nombreEstudiante").empty();
 
-    var htmlCol = $(" <div class='col-sm-12'> </div>" );
+    var htmlCol = $(" <div class='col-sm-12 textosLargos' > </div>" );
     $(htmlCol).append("<b>Mi materia favorita es...</b>"+student.materia+"<br><b>Mi principal pasatiempo es...</b>"+student.pasatiempo+"<br><b>Quiero que me recuerden por...</b>"+student.recuerdo+"<br><b>Siempre recordaré...</b>"+student.anecdota);
     $("#visorSecundario").html(htmlCol);
     $("#nombreEstudiante").text(student.nombre+" "+student.apellido);
@@ -123,7 +123,7 @@ View.prototype.pictures = function (student) {
 View.prototype.testament = function (student) {
     $("#visorSecundario").empty();
 
-    var htmlCol = $(" <div class='col-sm-12'> </div>" );
+    var htmlCol = $(" <div class='col-sm-12 textosLargos'> </div>" );
     $(htmlCol).append(student.testamento);
     $("#visorSecundario").html(htmlCol);
 }
@@ -180,7 +180,7 @@ View.prototype.infoTeacer = function (item) {
     $("#visorSecundario").empty();
     $("#nombreProfe").empty();
 
-    var htmlCol = $(" <div class='col-sm-12 text-center'> </div>" );
+    var htmlCol = $(" <div class='col-sm-12 text-center textosLargos'> </div>" );
     $(htmlCol).append(item.consejo + "<hr>");
     $(htmlCol).append("<img data-action='zoom' class='img-fluid' src='" + item.foto + "' alt='foto profesor'>");
     $("#visorSecundario").html(htmlCol);
@@ -199,8 +199,8 @@ View.prototype.mainHighSchool = function (visor) {
     $(visor).empty();
 
     var htmlCol1 = $("<div class='col-sm-8  col-info-cole'>" +
-    "<h2> Centro Educativo El Carmelo</h2>" +
-    "<span class='textos-varios'>El Centro Educativo El Carmelo, administrado por las Religiosas Católicas Carmelitas Misioneras, es una Institución Católica afiliada a ANADEC (Asociación Nacional de Educación Católica)y acreditada por la Conferencia Episcopal de Costa Rica, dedicada a la Educación desde 1986. Está representada legalmente por la Asociación Teresiano Carmelitana sin fines de lucro, cédula jurídica 3 002 045709.Se ubica en Barrio República de Cuba, Distrito Hospital, Cantón Central de San José, Costa Rica.Reconocida el Ministerio de Educación Pública desde 1987, el Consejo Superior de Educación, autorizó con fecha 27 de agosto de 1992 la Enseñanza Preescolar, I y II Ciclo de Educación General Básica con el nombre de Centro Educativo El Carmelo y en el año 2011 recibe la acreditación para III Ciclo y Educación Diversificada.</span>" +
+    "<span class='titulares'> Centro Educativo El Carmelo</span><br>" +
+    "<p class='textos-varios'>El Centro Educativo El Carmelo, administrado por las Religiosas Católicas Carmelitas Misioneras, es una Institución Católica afiliada a ANADEC (Asociación Nacional de Educación Católica)y acreditada por la Conferencia Episcopal de Costa Rica, dedicada a la Educación desde 1986. Está representada legalmente por la Asociación Teresiano Carmelitana sin fines de lucro, cédula jurídica 3 002 045709.Se ubica en Barrio República de Cuba, Distrito Hospital, Cantón Central de San José, Costa Rica.Reconocida el Ministerio de Educación Pública desde 1987, el Consejo Superior de Educación, autorizó con fecha 27 de agosto de 1992 la Enseñanza Preescolar, I y II Ciclo de Educación General Básica con el nombre de Centro Educativo El Carmelo y en el año 2011 recibe la acreditación para III Ciclo y Educación Diversificada.</p>" +
     "</div>"),
 
     htmlCol2 = $("<div class='col-sm-4'>" +
