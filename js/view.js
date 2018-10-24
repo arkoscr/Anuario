@@ -35,7 +35,7 @@ View.prototype.htmlTemplate = function (visor) {
 View.prototype.startScreen = function (visor) {
     $(visor).empty();
     var htmlContent = $("<div class='col-sm-12 text-center'></div>"),
-    htmlImage = $("<img class='img-fluid' src='img/grupal.jpg'>");
+    htmlImage = $("<img id='fondo' class='img-fluid' src='img/grupal.jpg'>");
     $(htmlContent).append(htmlImage);
     $(htmlContent).append("<br><span class=titulos-textos>Generación 2018</span>");
     $(visor).html(htmlContent);
