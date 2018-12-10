@@ -22,9 +22,9 @@ View.prototype.htmlTemplate = function (visor) {
                 "<li class='nav-item'>" +
                     "<a class='nav-link items-menu' id='pillsGrupo' data-toggle='pill' href='#' role='tab' aria-controls='pills-contact' aria-selected='false'>El grupo</a>" +
                 "</li>" +
-                "<li class='nav-item'>" +
-                    "<a class='nav-link items-menu' id='pillsEnlaces' data-toggle='pill' href='#' role='tab' aria-controls='pills-contact' aria-selected='false'>Descargas</a>" +
-                "</li>" +
+                // "<li class='nav-item'>" +
+                //     "<a class='nav-link items-menu' id='pillsEnlaces' data-toggle='pill' href='#' role='tab' aria-controls='pills-contact' aria-selected='false'>Descargas</a>" +
+                // "</li>" +
             "</ul>" +
         "<div class='row' id='mainVisor'></div>"
     );
